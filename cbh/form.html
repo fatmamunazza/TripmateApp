@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="static/css/form.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <title>Select Location - TripMate</title>
+    <link rel="icon" href="static/img/tripmate-logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="navBar">
+        <div class="logoBlock">
+            <img class="logoIcon" src="static/img/tripmate-logo.png">
+            <div class="tripmateName">TripMate</div>
+        </div>
+        <div class="sidenav">
+            <div class="closebtn"><a href="javascript:void(0)" onclick="closeNav()">&#10005;</a></div>
+            <a href="form.html" class="dropDownElement">Location Menu</a>
+            <a href="#" class="dropDownElement">About</a>
+            <a href="#" class="dropDownElement">FAQs</a>
+            <a href="#" class="dropDownElement">Contact Us</a>
+        </div>
+        <div class="navSlideMenu" onclick="openNav()">
+            &#9776;
+        </div>
+    </div>
+
+    <div class="containerBox">
+        <form action='publicPlaceList.html' method='post' class="citySelection">
+
+            <p>Select Language</p>
+            <select class="language" name="language" size="1">
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+            </select>
+
+            <p>Select Country</p>
+            <select size="1" name="country">
+                <option value="India">India</option>
+            </select>
+
+            <p>Select State</p>
+            <select id="state" name="state" size="1">
+                <option value="Bihar">Bihar</option>
+            </select>
+
+            <p>Select City</p>
+            <select id="city" name="city" size="1">
+                <option value="Patna">Patna</option>
+            </select>
+            <br>
+            <input type="submit" value="NEXT">
+
+    </div>
+    <script type="text/javascript" src="static/js/form.js"></script>
+</body>
+
+</html>

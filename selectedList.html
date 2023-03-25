@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="static/css/selectedList.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <title>Venue List - TripMate</title>
+    <link rel = "icon" href =  "static/img/tripmate-logo.png" type = "image/x-icon"> 
+</head>
+<body>
+    <div class="navBar">
+        <div class="logoBlock">
+            <img class="logoIcon" src="static/img/tripmate-logo.png">
+            <p class="tripmateName">TripMate</p>
+        </div>
+        <div class="sidenav">
+            <div class="closebtn"><a href="javascript:void(0)" onclick="closeNav()">&#10005;</a></div>
+            <a href="form.html" class="dropDownElement">Location Menu</a>
+            <a href="#" class="dropDownElement">About</a>
+            <a href="#" class="dropDownElement">FAQs</a>
+            <a href="#" class="dropDownElement">Contact Us</a>
+        </div>
+        <div class="navSlideMenu" onclick="openNav()">
+            <p>&#9776;</p>
+        </div>
+    </div>
+    
+    <div class = "containerBox">
+        <div class="tableHeader">
+            <div class="placeHeader"><p>Place</p></div>
+            <div class="rightHeaderBlock">
+                <p>Sort by</p>
+                <select id="selectmenu">
+                    <option value="Distance">Distance</option>
+                    <option value="Congestion">Congestion</option>
+                  </select>
+            </div>
+        </div>
+        <!--<div class = "categoryElement">
+            <div class="labelsLeft">
+                <p class="nameLabel">Gandhi Maidan</p>
+                <p class="secondaryLabel">Gandhi Maidan, Patna</p>
+            </div>
+            <div class="rightBlock">
+                <div class="distanceBlock">
+                    <p class="distanceLabel">4.6</p>
+                    <p class="distanceLowerLabel">km away</p>
+                </div>
+                <div class="borderline"></div>
+                <div class="congestionBlock">
+                    <img class="congestionIcon" src="../../static/img/moderate.png">
+                    <p class="congestionLabel">Moderate</p>
+                </div>
+            </div>
+        </div>-->
+
+        <!--</div>
+        <div class = "categoryElement">
+        </div>-->
+    </div>
+   <script type="text/javascript" src="static/js/selectedList.js"></script>
+</body>
+</html>
